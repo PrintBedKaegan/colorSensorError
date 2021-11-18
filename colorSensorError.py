@@ -36,6 +36,5 @@ requests.post('http://192.168.54.102/api/sensor/action-triggers', data = json.du
 
 response = requests.get('http://192.168.54.102/api/sensor/action-triggers')
 print(response.status_code)
-jprint(response.json())
-
+#jprint(response.json())
 fileWrite(response.json())
