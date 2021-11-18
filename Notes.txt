@@ -1,0 +1,38 @@
+Notes on learning about pythn API's
+
+Basic info
+https://192.168.54.102/api/
+
+
+
+1)
+When working with modules not in base module list, use the following commands in the python terminal
+
+import sys
+sys.path.append(r'C:\Users\kkumnick\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages')
+import *desired module to import*
+
+2)
+
+https://192.168.54.102/api/sensor/samples/current
+http://192.168.54.102/api/actions
+
+ColorDetectionResult
+
+ "actions": [
+            {   "arguments": {},
+                "name": "enable_switching_output"},
+            {   "arguments": {
+                    "locked": "keypad_target_lock_state"},
+                "name": "keylock"},
+            {   "arguments": {},
+                "name": "remove_all_detectables"},
+            {   "arguments": {},
+                "name": "remove_all_matchers"},
+            {   "arguments": {},
+                "name": "run_autogain"},
+            {   "arguments": {
+                    "matcher_id": "matcher_id",
+                    "remove_matcher_detectables_before": "remove_matcher_detectables_before"},
+                "name": "teach_single"}
+        ]   
